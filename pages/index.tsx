@@ -5,6 +5,8 @@ import { getSortedPostsData } from '../lib/posts'
 import Layout, { siteTitle } from '../components/layout'
 import Date from '../components/date'
 import utilStyles from '../styles/utils.module.css'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
 
 export default function Home({ allPostsData }: {
   allPostsData: {
@@ -42,6 +44,29 @@ export default function Home({ allPostsData }: {
             </li>
           ))}
         </ul>
+      </section>
+
+      <section>
+        <Swiper>
+            <SwiperSlide>
+              <div style={{ height: '100px', backgroundColor: '#ddd' }}>1</div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div style={{ height: '100px', backgroundColor: '#ddd' }}>2</div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div style={{ height: '100px', backgroundColor: '#ddd' }}>3</div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div style={{ height: '100px', backgroundColor: '#ddd' }}>4</div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div style={{ height: '100px', backgroundColor: '#ddd' }}>5</div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div style={{ height: '100px', backgroundColor: '#ddd' }}>6</div>
+            </SwiperSlide>
+        </Swiper>
       </section>
     </Layout>
   )
